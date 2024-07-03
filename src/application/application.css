@@ -1,0 +1,89 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*Login */
+.DangKy{
+	-fx-border-color: blue;
+	-fx-background-color:  #0598ff; 
+    -fx-text-fill: white;         
+	-fx-max-height: 35.0px;
+	-fx-max-width: 230.0px;
+	-fx-border-radius: 5.0px;
+	-fx-background-radius: 5.0px;
+	
+}
+.left-login{
+	-fx-background-color:  linear-gradient(from 0% 0% to 100% 100%, #3ABEF9, #00FFFF);
+}
+
+
+.form-login{
+	-fx-max-width: 230.0px;
+}
+
+/*Home */
+
+.XinChao{
+    -fx-font-weight: bold; 
+ 
+}
+.XinChao:hover{
+	    -fx-effect: dropshadow(three-pass-box, rgba(0.0,0.0,0.0,0.3), 10.0, 0.0, 0.0, 5.0); /* Hiệu ứng đổ bóng khi di chuột */
+	
+}
+/*Nút Thoát */
+#exitHyperlink {
+    -fx-text-fill: #1E90FF; /* Màu cam đỏ */
+    -fx-font-weight: bold; /* Chữ đậm */
+    -fx-background-color: #FFFFCC;
+    -fx-background-radius: 30.0px;
+    -fx-border-color: transparent;
+    
+}
+
+#exitHyperlink:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0,0.0,0.0,0.3), 10.0, 0.0, 0.0, 5.0); /* Hiệu ứng đổ bóng khi di chuột */
+	-fx-border-color: transparent;
+}
+
+#exitHyperlink:pressed {
+    -fx-border-width: 0.0px; 
+    -fx-background-color: transparent;
+}
+
+.button-home {
+    -fx-background-color: #3572EF; 
+    -fx-text-fill: white; 
+    -fx-font-weight: bold; 
+    -fx-background-radius: 5px; 
+}
+
+/* Hover */
+.contrainer-header{
+	-fx-background-color: #3ABEF9;
+}
+.button-home:hover {
+	    -fx-background-radius: 7px; 
+}
+
+.home-banner-left{
+	-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #3ABEF9, #A7E6FF);
+}
+
+.footer-home{
+	-fx-background-color:#3ABEF9 ;
+}
+
+
+
+/*Đăng ký  */
+
+.button-dangky{
+	 -fx-background-color:  #0598ff; 
+    -fx-text-fill: white; 
+    -fx-font-weight: bold; 
+    -fx-background-radius: 5px;
+}
+
+
+
+
+

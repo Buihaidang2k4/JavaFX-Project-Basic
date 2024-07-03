@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="648.0" style="-fx-background-color: white;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.199951171875" minWidth="10.0" prefWidth="263.40001220703124" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="356.800048828125" minWidth="10.0" prefWidth="251.39998779296872" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="194.19998779296873" minHeight="10.0" prefHeight="122.39997558593751" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="163.80001831054688" minHeight="10.0" prefHeight="80.5999755859375" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="137.59999389648436" minHeight="10.0" prefHeight="52.79997253417969" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="114.20001831054685" minHeight="10.0" prefHeight="82.39996337890625" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="102.19998779296873" minHeight="10.0" prefHeight="76.80003662109374" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="message" prefHeight="32.0" prefWidth="231.0" textAlignment="CENTER" textFill="#dc0b0b" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <GridPane.margin>
+            <Insets top="-65.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="emailIf" prefHeight="28.0" prefWidth="302.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" styleClass="form-login" stylesheets="@application.css" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </TextField>
+      <PasswordField fx:id="passwordTF" prefHeight="28.0" prefWidth="48.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="63.0" right="60.0" />
+         </GridPane.margin>
+      </PasswordField>
+      <Button alignment="CENTER" contentDisplay="CENTER" maxWidth="359.0" minHeight="17.0" mnemonicParsing="false" onAction="#onClickLoginBtn" prefHeight="17.0" prefWidth="100.0" styleClass="DangKy" stylesheets="@application.css" text="Đăng nhập" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets top="17.0" />
+         </GridPane.margin>
+      </Button>
+      <Hyperlink alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="142.0" text="Quên mật khẩu ?" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets right="100.0" />
+         </GridPane.margin>
+      </Hyperlink>
+      <Hyperlink fx:id="hyperlink" alignment="CENTER" contentDisplay="CENTER" onAction="#onHyperlinkClick" prefHeight="26.0" prefWidth="110.0" text="Đăng ký" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin>
+      </Hyperlink>
+      <VBox alignment="CENTER" prefHeight="413.0" prefWidth="311.0" styleClass="left-login" stylesheets="@application.css" GridPane.halignment="CENTER" GridPane.rowSpan="5">
+         <children>
+            <ImageView fitHeight="223.0" fitWidth="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icon/teamwork.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <ImageView fitHeight="48.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+         <image>
+            <Image url="@../../icon/management-consulting.gif" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="85.0" text="User login" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.11339999735355377" green="0.6706799864768982" blue="0.8100000023841858" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.48317631224764457">
+                     <color>
+                        <Color red="0.11339999735355377" green="0.6706799864768982" blue="0.8100000023841858" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="210.0" />
+         </GridPane.margin>
+         <image>
+            <Image url="@../../icon/user%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="28.0" layoutX="565.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets left="210.0" />
+         </GridPane.margin>
+         <image>
+            <Image url="@../../icon/padlock%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</GridPane>
